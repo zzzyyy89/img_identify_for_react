@@ -1,0 +1,78 @@
+.seek-bar{
+    width: 400px;
+    height: 32px;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    /*position: relative;*/
+}
+.seek-bar,.seek-bar div{
+    box-sizing: border-box;
+}
+.seek-thumb{
+    position: relative;
+    text-align: right;
+    display: inline-block;
+    height: 100%;
+    border-radius: 4px;
+    border: 1px solid #dedede;
+    transition: .1s;
+}
+
+.seek-thumb .seek-drag i{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("./imgs/pull_right_n.png") center no-repeat;
+    background-size: contain;
+}
+
+.seek-thumb:hover,.seek-thumb.in-drag{
+    border: 1px solid #4b56ff;
+    background-color: rgba(84, 141, 212, 0.5);
+}
+.seek-thumb:hover .seek-drag,.seek-thumb.in-drag .seek-drag{
+    background-color: #4b56ff;
+}
+
+.seek-thumb:hover .seek-drag i{
+    background: url("./imgs/pull_right_h.png") center no-repeat;
+    background-size: contain;
+}
+
+.seek-thumb.in-ok{
+    border: 1px solid #4ed158;
+    background-color: rgba(123, 224, 118, 0.5) !important;
+}
+
+.seek-thumb.in-ok .seek-drag{
+    background-color: #4ed158;
+}
+
+.seek-thumb.in-ok .seek-drag i{
+    background: url("./imgs/right.png") center no-repeat;
+    background-size: contain;
+}
+
+.seek-thumb.in-fail{
+    border: 1px solid #d46343;
+    background-color: rgba(224, 193, 110, 0.5) !important;
+}
+
+.seek-thumb.in-fail .seek-drag{
+    background-color: #d46343;
+}
+
+.seek-thumb.in-fail .seek-drag i{
+    background: url("./imgs/error.png") center no-repeat;
+    background-size: contain;
+}
+
+.seek-drag{
+    background: white;
+    width: 32px;
+    height: 100%;
+    line-height: 32px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}

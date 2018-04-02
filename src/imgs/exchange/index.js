@@ -1,0 +1,1 @@
+export default [require('./s1.jpg'),require('./s2.jpg'),require('./s3.jpg'),require('./s4.jpg'),require('./s5.jpg'),require('./s6.jpg'),require('./s7.jpg'),require('./s8.jpg'),require('./s9.jpg')]
